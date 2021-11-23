@@ -1,7 +1,7 @@
 
 body {
   padding: 50px;
-  background-color: aqua;
+  background-color:azure;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -33,3 +33,31 @@ a {
   border: none;
   text-decoration: none;
 }
+
+.card {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.single {
+  padding: 50px;
+  background-color:azure;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.single-card {
+  margin: 20px auto;
+}
+
+.img-fluid {
+  margin-top: auto;
+}
+
+.showTime{
+  display: inline-flex;
+  list-style: none;
+}
+.showTime li {
+  padding: 0px 5px;
+} 
