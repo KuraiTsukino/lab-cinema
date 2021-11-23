@@ -15,8 +15,9 @@ hbs.registerPartials(__dirname + "views/partials")
 connectDB()
 
 // 3. Rutas.
-
+app.use("/movies", require("./routes/movies"))
 app.use("/", require("./routes/index"))
+
 
 // 4. Servidor.
 app.listen(process.env.PORT, () => {

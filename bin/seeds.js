@@ -4,7 +4,7 @@ const Movie = require("./../models/Movie")
 
 // 2. Conexión a base de datos
 
-mongoose.connect("mongodb://localhost:27017/ih-cinema-express", {
+mongoose.connect("mongodb+srv://Kurai_Tsukino:FUGmTKSmHL8yn8A@cluster0.hptoy.mongodb.net/ih-cinema-express", {
     useNewUrlParser:true, 
     useUnifiedTopology: true
 })

@@ -11,9 +11,7 @@ router.get("/movies/single", indexController.single)
 
 router.get("/movies", indexController.movies)
 
-router.get("/", (req, res) => {
-    res.send("Estas en el home")
-})
+router.get("/", indexController.home)
 
 
 // 3. Exportaciones.
