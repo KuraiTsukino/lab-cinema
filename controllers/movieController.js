@@ -19,8 +19,6 @@ exports.getMovie = async (req,res) => {
 
     const getTheMovie = await Movie.findById(singleMovieID)
 
-    console.log(getTheMovie)
-
     res.render("movies/single", {
         data:getTheMovie
     })

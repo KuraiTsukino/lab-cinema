@@ -10,6 +10,8 @@ require("dotenv").config()
 app.set("views", __dirname + "/views")
 app.set("view engine", "hbs")
 
+app. use(express.static('public'))
+
 hbs.registerPartials(__dirname + "views/partials")
 
 connectDB()
