@@ -16,6 +16,8 @@ connectDB()
 
 // 3. Rutas.
 
+app.use("/", require("./routes/index"))
+
 // 4. Servidor.
 app.listen(process.env.PORT, () => {
     console.log (`Servidor activado en el puerto http://localhost:${process.env.PORT}`)
