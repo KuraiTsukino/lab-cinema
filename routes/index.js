@@ -3,15 +3,13 @@
 const express = require("express")
 const router = express.Router()
 
+const indexController = require("./../controllers/indexController")
+
 // 2. Rutas de la URL base
 
-router.get("/movies/single", (req, res) => {
-    res.send("Estás en la página de single movies")
-})
+router.get("/movies/single", indexController.single)
 
-router.get("/movies", (req, res) => {
-    res.send("Estás en la página de movies")
-})
+router.get("/movies", indexController.movies)
 
 router.get("/", (req, res) => {
     res.send("Estas en el home")
